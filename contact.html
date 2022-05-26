@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto A&T</title>
+</head>
+
+<body class="contact">
+    
+ <header class="padrecontact"> 
+    <div>
+        <img class="img" src="./imagenes/logo.png" alt="A&T" width="250px" height="50px">
+    </div>
+    <div class="caja2">
+        <nav>  
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="contact.html">CONTACTO</a></li>
+           </ul>
+        </nav>
+    </div>
+</header>
+
+
+ <main>
+
+     <h2>Rellena los campos y nos pondremos en contacto</h2>
+     
+          <form> 
+
+          <label for="nombreapellido">Nombre y Apellido</label>
+          <input type="text" id="nombreapellido" class="idpadron" required>
+         
+          <label for="correoelectronico">Correo electronico</label>
+          <input type="email" id="correoelectronico" class="idpadron" required placeholder="email@dominio.com">
+        
+          <label for="telefono">Telefono</label>
+          <input type="tel" id="telefono" class="idpadron" required placeholder="(XX) XXXX XXXX"> 
+
+          <label for="mensaje">Mensaje</label>
+          <textarea  id="mensaje" cols="60" rows="10" class="idpadron"> </textarea>
+
+          <fieldset>
+          
+          <legend>¿Como le gustaria que lo contactemos?</legend>
+          
+          <label for="radio-email"><input type="radio" name="contacto" value="email" class="radio-email">Email</label> 
+
+          <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" class="radio-telefono">Telefono</label> 
+       
+          <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" class="radio-whatsapp" checked>Whatsapp</label> 
+          
+          <input type="submit" value="enviar formularios" class="enviar">
+        
+          </fieldset>
+
+          <fieldset class="idpadron">
+               <legend>¿En que horario le gustaria ser contactado?</legend>
+                    <select>
+                    <option>mañana</option>
+                    <option>tarde</option>
+                    <option>noche</option>
+                    </select>
+          </fieldset>
+
+          <label class="checkbox"><input type="checkbox" checked>¿le gustaria recibir novedades de Inversiones A&T?</label>    
+
+          
+          <table>
+          <thead>  
+               <tr>
+               <td>dia</td>
+               <td>horarios</td>
+               </tr>
+          </thead> 
+          <tbody>
+               <tr>
+               <td>lunes</td>
+               <td>08hs~20hs</td>
+               </tr>
+               <tr>
+               <td>miercoles</td>
+               <td>08hs~20hs</td>
+               </tr>           
+               <tr>
+               <td>viernes</td>
+               <td>08hs~20hs</td>
+               </tr>
+          </tbody> 
+          </table>
+     </main>
+     </form>
+          <footer class="pagcontact">
+               <p >&copy copyright Inversiones A&T 2022</p>
+          </footer>
+
+     </body>
+
+     </html>
