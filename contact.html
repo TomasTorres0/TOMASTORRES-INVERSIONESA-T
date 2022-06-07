@@ -4,99 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contacto A&T</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
-
 <body class="contact">
-    
- <header class="padrecontact"> 
-    <div>
-        <img class="img" src="./imagenes/logo.png" alt="A&T" width="250px" height="50px">
-    </div>
-    <div class="caja2">
-        <nav>  
-           <ul>
-             <li><a href="index.html">HOME</a></li>
-             <li><a href="contact.html">CONTACTO</a></li>
-           </ul>
-        </nav>
-    </div>
+    <div class="contenedorcontact">
+<header class="menucontact">
+        <img src="./imagenes/logo.png" alt="A&T" width="300px" height="80px">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">CONTACTO</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
 </header>
-
-
- <main>
-
-     <h2>Rellena los campos y nos pondremos en contacto</h2>
-     
-          <form> 
-
-          <label for="nombreapellido">Nombre y Apellido</label>
-          <input type="text" id="nombreapellido" class="idpadron" required>
-         
-          <label for="correoelectronico">Correo electronico</label>
-          <input type="email" id="correoelectronico" class="idpadron" required placeholder="email@dominio.com">
+   
+   
+<main class="maincontact">
+   <div>
+    <h2>Rellena los campos y nos pondremos en contacto</h2>
+   </div>
+    
         
-          <label for="telefono">Telefono</label>
-          <input type="tel" id="telefono" class="idpadron" required placeholder="(XX) XXXX XXXX"> 
+    <form class="formcontact"> 
+   
+        <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="idpadron" required>
+            <br>
+            <br>
+            
+        <label for="correoelectronico">Correo electronico</label>
+            <input type="email" id="correoelectronico" class="idpadron" required placeholder="email@dominio.com">
+            <br>
+            <br>
+           
+        <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="idpadron" required placeholder="(XX) XXXX XXXX"> 
+            <br>
+            <br>
+   
+        <label for="mensaje">Mensaje</label>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea  id="mensaje" cols="60" rows="10" class="idpadron"> </textarea>
+            <br>
 
-          <fieldset>
+        <textarea cols="60" rows="10"></textarea>
+            <br>
+            <br>
+   
+             <fieldset>
+             
+             <legend>¿Como le gustaria que lo contactemos?</legend>
+            <br>
+             <div class="formulariocontact">
+                <label class="formulario" for="radio-email"><input type="radio" name="contacto" value="email" >Email</label>
+            
+   
+                <label class="formulario" for="radio-telefono"><input type="radio" name="contacto" value="telefono" >Telefono</label> 
+             
           
-          <legend>¿Como le gustaria que lo contactemos?</legend>
-          
-          <label for="radio-email"><input type="radio" name="contacto" value="email" class="radio-email">Email</label> 
+                <label class="formulario" for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" checked>Whatsapp</label> 
+             <br>
+             <input class="enviar" type="submit" value="enviar formularios"> 
+             </div>
+               
+             </fieldset>
+              <br>
+              <div>
+                <legend>¿En que horario le gustaria ser contactado?</legend>
+                <br>
+                <select class="select">
+                <option>mañana</option>
+                <option>tarde</option>
+                <option>noche</option>
+                </select>
+              </div>
+                 <br>
+            
+   
+             <label class="checkbox"><input type="checkbox" checked>¿le gustaria recibir novedades de Inversiones A&T?</label>    
+   
+             
+             <table>
+             <thead>  
+                  <tr>
+                  <td>dia</td>
+                  <td>horarios</td>
+                  </tr>
+             </thead> 
+             <tbody>
+                  <tr>
+                  <td>lunes</td>
+                  <td>08hs~20hs</td>
+                  </tr>
+                  <tr>
+                  <td>miercoles</td>
+                  <td>08hs~20hs</td>
+                  </tr>           
+                  <tr>
+                  <td>viernes</td>
+                  <td>08hs~20hs</td>
+                  </tr>
+             </tbody> 
+             </table>
+        </main>
+        </form>
+        <br>
 
-          <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" class="radio-telefono">Telefono</label> 
-       
-          <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" class="radio-whatsapp" checked>Whatsapp</label> 
-          
-          <input type="submit" value="enviar formularios" class="enviar">
-        
-          </fieldset>
+        <div class="pagcontact">
+            <footer >
+                <p class="copyrightcontact">&copy copyright Inversiones A&T 2022</p>
+                <div class="piedepaguina">
+                    <img src="./imagenes/logofacebook.jpg" alt="facebook" width="60px" height="60px">
+                    <img src="./imagenes/logointagram.jpg" alt="instagram" width="60px" height="60px">
+                    <img src="./imagenes/logowhastsapp.jpg" alt="whastsapp" width="60px" height="60px">
+                    <img src="./imagenes/logoyoutube.jpg" alt="youtube" width="60px" height="60px">
+                  </div>
+           </footer>
+        </div>
+    </div>
+   
+        </body>
+    
 
-          <fieldset class="idpadron">
-               <legend>¿En que horario le gustaria ser contactado?</legend>
-                    <select>
-                    <option>mañana</option>
-                    <option>tarde</option>
-                    <option>noche</option>
-                    </select>
-          </fieldset>
-
-          <label class="checkbox"><input type="checkbox" checked>¿le gustaria recibir novedades de Inversiones A&T?</label>    
-
-          
-          <table>
-          <thead>  
-               <tr>
-               <td>dia</td>
-               <td>horarios</td>
-               </tr>
-          </thead> 
-          <tbody>
-               <tr>
-               <td>lunes</td>
-               <td>08hs~20hs</td>
-               </tr>
-               <tr>
-               <td>miercoles</td>
-               <td>08hs~20hs</td>
-               </tr>           
-               <tr>
-               <td>viernes</td>
-               <td>08hs~20hs</td>
-               </tr>
-          </tbody> 
-          </table>
-     </main>
-     </form>
-          <footer class="pagcontact">
-               <p >&copy copyright Inversiones A&T 2022</p>
-          </footer>
-
-     </body>
-
-     </html>
+</html>

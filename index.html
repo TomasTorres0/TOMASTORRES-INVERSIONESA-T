@@ -4,138 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Probando grillas</title>
 </head>
 
-<body class="body">
+<body>
 
+  <div class="contenedor">
 
-<header> 
-     <div class="padre"> 
-          <img class="logo" src="./imagenes/logo.png" alt="logoprincipal">
-     </div> 
+    <header class="header">
 
-     <div id="padre">
-       <nav>  
-          <ul>
-               <div class="home">
-                    <li class="menu"><a href="index.html">HOME</a></li>
-               </div>
-               <div class="contact">
-                    <li class="menu"><a href="contact.html">CONTACTO</a></li>
-               </div>
-          </ul>
-       </nav>
-     </div>
-</header>
+      <div class="logomedia">
+        <img class="logo" src="./imagenes/logo.png" alt="inversiones" width="300px" height="80px">
+      </div>
+      
+      <ul class="menu">
+        <li class="nav"><a href="index.html">HOME</a></li>
+        <li class="nav"><a href="contact.html">CONTACTO</a></li>
+        <li class="nav"><a href="cartera.html">CARTERA</a></li>
+        <li class="nav"><a href= "mercados.html">MERCADOS</a></li>
+      </ul>
 
-<main id="principal">
+    </header>
 
-     <div class="hijodelmain">
-     <h1>Inversiones A&T</h1>
+    <main class="contenido">
+      <h1 class="animate__animated animate__pulse estilo">Inversiones A&T "Quienes somos" </h1>
+     
+      <p class="parrafo"> <strong>Tomas Torres</strong> es el fundador de Inversiones A&T, se inició 
+        hace 6 años en el trading  y desde el primer día que vio 
+        un gráfico supo que esa sería su pasión. 
+        Desde hace 3 años comparte contenido
+        a diario en el Blog de esta web, donde su principal cometido
+        es transmitir la realidad de esta profesión tan profunda 
+        pero a su vez apasionante.
+        Este trader profesional cuenta con amplia experiencia en 
+        el trading logrando especializarse en el mercado de Divisas
+        Forex, acciones y criptomonedas.
+        InversionesA&T.com, la comunidad que todo aspirante a trader 
+        necesita, proporciona contenido diario para un aprendizaje 
+        fácil y sencillo.
+        
+        Actualmente, ofrece contenido formativo a más de 1.200 
+        usuarios activos y 347 miembros directos de la Comunidad
+        que hace trading con la Estrategia A&T.
+        El trading en mercados mundiales con una ventaja.
+        Operar en los diferentes mercados es difícil, pero
+        con Inversiones A&T se vuelve un poco más fácil. 
+        Aproveche nuestras numerosas herramientas de trading 
+        que son utilizadas por muchos de corredores experimentados.</p>
+    </main>
 
-     <p class="parrafoprincipal">  Tomas Torres es el fundador de Inversiones A&T, se inició 
-          hace 6 años en el trading  y desde el primer día que vio 
-          un gráfico supo que esa sería su pasión. 
-          Desde hace 3 años comparte contenido
-          a diario en el Blog de esta web, donde su principal cometido
-          es transmitir la realidad de esta profesión tan profunda 
-          pero a su vez apasionante.
-          Este trader profesional cuenta con amplia experiencia en 
-          el trading logrando especializarse en el mercado de Divisas
-          Forex, acciones y criptomonedas.
-          InversionesA&T.com, la comunidad que todo aspirante a trader 
-          necesita, proporciona contenido diario para un aprendizaje 
-          fácil y sencillo.
-          
-          Actualmente, ofrece contenido formativo a más de 1.200 
-          usuarios activos y 347 miembros directos de la Comunidad
-          que hace trading con la Estrategia A&T.
-          El trading en mercados mundiales con una ventaja.
-          Operar en los diferentes mercados es difícil, pero
-          con Inversiones A&T se vuelve un poco más fácil. 
-          Aproveche nuestras numerosas herramientas de trading 
-          que son utilizadas por muchos de corredores experimentados.
-     </p>
+    <aside class="sidebar">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/BTCUSDT_2022.png" class="d-block w-100" alt="Bitcoin">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/PFE_2022.png" class="d-block w-100" alt="AccionPfizer">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/GBPJPY_2022.png" class="d-block w-100" alt="Libraesterlina">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </aside>
 
-     </div>
+    <div class="paquetes">
+      <h1>Nuestros Packs Formativos</h1>
 
-    <div class="contenedor">
-     <img class="imagenprincipal" src="./imagenes/imagenprincipal.png" alt="bitcoin">
+    </div>
+
+    <div class="opc1">
+
+      <img class="card" src="./imagenes/inversionconservador.jpg" alt="inversion">
+       <h3>Perfil <br> Conservador</h3>
+       <ol>
+         <li>Alertas De Largo Plazo</li>
+         <li>Alertas De Mediano Plazo</li>
+         <li>1 Clase Grabada Por Semana</li>
+         <li>Al Menos 1 Alerta Semanal</li>
+         <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas.</li>
+       </ol> 
+      <button>ACCEDER</button>
+    </div>
+
+    <div class="opc2">
+
+      <img class="card" src="./imagenes/inversionmoderada.jpg" alt="inversiones">
+       <h3>Perfil <br> Moderado</h3>
+       <ol>
+         <li>Alertas De Corto Plazo</li>
+         <li>Alertas Todos Los Dias Habiles</li>
+         <li>1 Clase Grabada Por Semana</li>
+         <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas, commodities</li>
+       </ol> 
+      <button>ACCEDER</button>
+    </div>
+
+    <div class="opc3">
+
+      <img class="card" src="./imagenes/inversionagresivo.jpg" alt="inverion">
+      <h3>Perfil <br> Agresivo</h3>
+       <ol>
+         <li>Alertas De Corto Plazo</li>
+         <li>Alertas De Mediano Plazo</li>
+         <li>Alertas De Largo Plazo</li>
+         <li>Soporte De Lunes A Viernes</li>
+         <li>Acceso A La Comunidad Privada</li>
+         <li> 4 Clases En Vivo Cada Semana</li>
+         <li>Alertas Todos Los Dias Habiles</li>
+         <li>Extras Sorpresa (Pueden Incluir Sorteos Semanales/Cupones De Trading, Y Más)</li>
+         <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas, commodities.</li>
+       </ol> 
+      <button>ACCEDER</button>
     </div>
     
+    <footer class="footer">
+      <p class="copyright">&copy copyright Inversiones A&T 2022</p>
+      <div class="piedepaguina">
+        <img src="./imagenes/logofacebook.jpg" alt="facebook" width="60px" height="60px">
+        <img src="./imagenes/logointagram.jpg" alt="instagram" width="60px" height="60px">
+        <img src="./imagenes/logowhastsapp.jpg" alt="whastsapp" width="60px" height="60px">
+        <img src="./imagenes/logoyoutube.jpg" alt="youtube" width="60px" height="60px">
+      </div>
       
-</main>
+    </footer>
 
-
-<section class="cards">
-      <div class="card">
-        <img src="./imagenes/inversionconservador.jpg" alt="" >
-        <h2 class="titlecard">Paquete Conservador</h2>
-
-          <ul>
-               <li>Alertas De Largo Plazo</li>
-               <li>Alertas De Mediano Plazo</li>
-               <li>1 Clase Grabada Por Semana</li>
-               <li>Al Menos 1 Alerta Semanal</li>
-               <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas.</li>
-          </ul> 
-
-          <button class="botoncards">Acceder</button>
-       </div>
-
-       <div class="card">
-        <img src="./imagenes/inversionmoderada.jpg" alt="">
-        <h2 class="titlecard">Paquete Moderado</h2>
-
-        <ul>
-             <li>Alertas De Corto Plazo</li>
-             <li>Alertas Todos Los Dias Habiles</li>
-             <li>1 Clase Grabada Por Semana</li>
-             <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas, commodities</li>
-        </ul> 
-
-          <button class="botoncards">Acceder</button>
-       </div>
-         
-       <div class="card">
-          <img src="imagenes/inversionagresivo.jpg" alt="">
-          <h2 class="titlecard">Paquete Agresivo</h2>
-
-           <ul>
-                <li>Alertas De Corto Plazo</li>
-                <li>Alertas De Mediano Plazo</li>
-                <li>Alertas De Largo Plazo</li>
-                <li>Soporte De Lunes A Viernes</li>
-                <li>Acceso A La Comunidad Privada</li>
-                <li> 4 Clases En Vivo Cada Semana</li>
-                <li>Alertas Todos Los Dias Habiles</li>
-                <li>Extras Sorpresa (Pueden Incluir Sorteos Semanales/Cupones De Trading, Y Más)</li>
-                <li>Instrumentos: índices, acciones(incluye cedears), criptomonedas, commodities.</li>
-           </ul> 
-           
-           <button class="botoncards">Acceder</button>
-       </div>
-</section>
-
-
-
-     <footer>
-          <div>
-               <img class="redessociales" src="./imagenes/logofacebook.jpg" alt="" width="50px">
-               <img class="redessociales" src="imagenes/logointagram.jpg" alt="" width="50px">
-               <img class="redessociales" src="imagenes/logoyoutube.jpg" alt="" width="50px">
-               <img class="redessociales" src="imagenes/logowhastsapp.jpg" alt="" width="50px">
-          </div>
-          <div>
-               <p class="copyright">&copy copyright Inversiones A&T 2022</p>
-          </div>
-          
-     </footer>  
-
-     </body>
-
-    
-      
+  </div>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
