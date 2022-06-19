@@ -1,0 +1,18 @@
+main{
+    padding: 1rem;
+    & .estilo{
+        margin-top: 10px;
+        text-align: center;
+        color: #6f9c41;
+    }
+    & .parrafo{
+        margin-top: 20px;
+        -moz-column-count: 3;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 20px;
+        column-count: 3;
+        column-gap: 20px;
+        font-family: cursive;
+    }
+}

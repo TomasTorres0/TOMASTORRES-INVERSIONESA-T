@@ -1,32 +1,25 @@
+@use 'reset';
+@use 'navbar';
+@use 'main';
 @use 'variables';
+@use 'animaciones';
+
 
 
 body{
-    background-color: $four;
+    background-color: map-get($map: variables.$palette, $key:'two' )
 }
 
-.navbar{
- 
-    font-size: x-large;
-    font-family: sans-serif;
-}
-main{
-    padding: 1rem;
-    .estilo{
-        margin-top: 10px;
-        text-align: center;
-        color: #6f9c41;
-    }
-    .parrafo{
-        margin-top: 20px;
-        -moz-column-count: 3;
-        -moz-column-gap: 20px;
-        -webkit-column-count: 3;
-        -webkit-column-gap: 20px;
-        column-count: 3;
-        column-gap: 20px;
-        font-family: cursive;
-    }
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border-radius: 50%;
+
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
 }
 .titulo{
     font-size:xx-large;
