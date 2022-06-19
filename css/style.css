@@ -1,0 +1,72 @@
+body {
+  background-color: #EDDFB3;
+}
+
+.navbar {
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+main .estilo {
+  margin-top: 10px;
+  text-align: center;
+  color: #6f9c41;
+}
+main .parrafo {
+  margin-top: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  font-family: cursive;
+}
+
+.titulo {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #050505;
+  text-align: center;
+  margin: 30px;
+}
+
+.tarjetas {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.tarjetas .card {
+  align-items: center;
+  background-color: #87805E;
+}
+.tarjetas .img {
+  width: 315px;
+  height: 200px;
+  border-radius: 1rem;
+}
+.tarjetas h4 {
+  color: #050505;
+  font-family: Courier, monospace;
+  align-items: stretch;
+  text-align: center;
+}
+.tarjetas p {
+  text-align: center;
+}
+.tarjetas ol {
+  list-style: unset;
+}
+.tarjetas .boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .colortextofooter {
+  color: #000000;
+}
