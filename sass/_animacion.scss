@@ -8,3 +8,8 @@
     animation-iteration-count: initial;
     animation-direction: alternate;
 }
+@for $iterador from 1 through 5{
+    .selector-#{$iterador}{
+        color:black;
+    }
+}

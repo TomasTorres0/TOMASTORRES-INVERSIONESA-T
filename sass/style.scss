@@ -1,13 +1,14 @@
 @use 'reset';
 @use 'navbar';
 @use 'main';
+@use 'animacion';
 @use 'variables';
-@use 'animaciones';
+
 
 
 
 body{
-    background-color: map-get($map: variables.$palette, $key:'two' )
+    background-color: map-get($map: variables.$palette, $key:'one' )
 }
 
 
@@ -20,6 +21,11 @@ body{
     animation-duration: 1s;
     animation-iteration-count: initial;
     animation-direction: alternate;
+}
+@for $iterador from 1 through 5{
+    .selector-#{$iterador}{
+        color:black;
+    }
 }
 .titulo{
     font-size:xx-large;
