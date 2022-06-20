@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#ffffff, #f8efef, #ff0000, #ffa500);
 }
 
 nav {
@@ -13,7 +13,6 @@ nav {
 }
 nav .container-fluid {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -37,27 +36,25 @@ main .parrafo {
   font-family: cursive;
 }
 
-body {
-  background-color: #EDDFB3;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  background-color: greenyellow;
-  border-radius: 50%;
-  animation-duration: 1s;
-  animation-iteration-count: initial;
-  animation-direction: alternate;
-}
-
 .titulo {
-  font-size: xx-large;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #050505;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #165a6e;
   text-align: center;
-  margin: 30px;
+  padding: 1rem;
+}
+
+.parrafotarj {
+  margin-top: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
 }
 
 .tarjetas {

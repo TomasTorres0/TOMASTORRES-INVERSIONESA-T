@@ -1,15 +1,29 @@
+.animation{
+    display: flex;
+    justify-content: space-around;
+}
 .circle{
     width: 100px;
     height: 100px;
     background-color: greenyellow;
     border-radius: 50%;
 
-    animation-duration: 1s;
-    animation-iteration-count: initial;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
+    
 }
-@for $iterador from 1 through 5{
-    .selector-#{$iterador}{
-        color:black;
+@for $iterador from 1 through 3{
+    .circle-#{$iterador}{
+        animation-name: animacion#{$iterador} ;
+    }
+
+    @keyframes animacion#{$iterador} { 
+        100%{
+            transform: translate(50% * $iterador);
+        }
+    }
+    @if $iterador == 3{
+        animation-direction: alternate-reverse;
     }
 }
