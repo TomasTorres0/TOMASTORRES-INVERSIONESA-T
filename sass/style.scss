@@ -4,6 +4,7 @@
 //@use 'animacion';
 @use 'variables';
 
+
 .titulo{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -60,6 +61,15 @@
     .colortextofooter{
         color: #000000;
         
+    }
+}
+@media screen,(min-width:600px) {
+    body{
+        background-color: #87805E;
+    }
+    .logo{
+        width: 250px;
+        height: 70px;
     }
 }
 

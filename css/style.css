@@ -11,6 +11,10 @@ nav {
   font-size: x-large;
   font-family: sans-serif;
 }
+nav .logo {
+  width: 380px;
+  height: 90px;
+}
 nav .container-fluid {
   display: flex;
   align-items: center;
@@ -91,4 +95,16 @@ main .parrafo {
 
 .container .colortextofooter {
   color: #000000;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #87805E;
+  }
+
+  nav .logo {
+    width: 295px;
+    height: 70px;
+    margin-left: 10px;
+  }
 }
