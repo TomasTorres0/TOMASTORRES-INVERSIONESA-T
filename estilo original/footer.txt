@@ -1,0 +1,17 @@
+<footer class="d-flex flex-column my-4 border-top">
+      <div class="container footer">
+          <div class="d-flex justify-content-center m-lg-3">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+          <span class="colortextofooter"><p class="alineartexto">&copy; 2022 Inversiones A&T :: Argentina , Córdoba</p></span>
+          </div>
+        
+      <ul class="nav justify-content-around m-3">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    
+    </div>
+  </footer>

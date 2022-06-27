@@ -1,10 +1,8 @@
 @use 'reset';
 @use 'navbar';
 @use 'main';
-//@use 'animacion';
+@use 'tarjetas';
 @use 'variables';
-
-
 .titulo{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -28,6 +26,7 @@
     margin-top: 40px ;
     display: flex;
     justify-content: space-around;
+
     .card{
         align-items: center;
         background-color:#87805E;
@@ -116,12 +115,136 @@
    .alineartexto{
     text-align: center;
    }
-   .tarjetas{
-    margin-left: 14px;
-   }
+ 
   .card{
     margin-top: 30px;
     
   }
   
 }
+
+//INICIA PAGINA GRAFICOS */
+
+.bodygraficos{ 
+    
+    background-image: linear-gradient(#1A4D2E,#FF9F29,#FAF3E3);
+    margin: 20px auto;
+}
+  .logomedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: logomedia;
+}
+  .header{
+    background-color: #7edfb2;
+    grid-area: header;
+         & ul{
+             display: flex;
+             justify-content: space-around;
+             font-size: x-large;
+             font-family: serif;
+             list-style: none;
+             margin: 10px;
+             color: black;
+             
+             & .nav {
+                 transition-duration: 4s;
+             }
+             & .nav:hover {
+                 background-color: #A5BECC;
+                 transition-duration: 3s;
+             }
+         }
+     }
+  main{
+    grid-area: main;
+    
+    & .titulograf{
+        font-size: 3rem;
+        font-family: cursive;
+        text-align:center;
+        color: #000000;
+     }
+     & .parrafograficos{
+        font-size: 1rem;
+        font-family: Helvetica, sans-serif;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        
+     }
+        & .img-fluid{
+            text-align: center;
+            color: white;
+        }
+  }
+  .sectiongraf{
+    grid-area: sectiongraf;
+  }
+  .container{
+    grid-area: footer;
+  }
+.iniciograficos{
+    color: #1A4D2E;
+    
+    }
+    .sectiongraf{
+        & .titulo2{
+            font-size:3rem;
+            text-align: center;
+            margin: auto;
+        }
+        & .card-group{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 450px;
+            height: 450px;
+            align-content: center;
+            margin: auto;
+
+            & .cardgraf{
+                
+               margin: 25px 15px 0 15px;  
+            }
+            & .card-title{
+                font-size: 2rem;
+                color: #1A4D2E;
+                margin: 10px;
+            }
+            & .card-text{
+                font-size: 20px;
+
+            }
+        }
+    }
+   .footer{
+    margin-top: 100px;
+   }
+   .alineartexto{
+    text-align: center;
+   }
+
+   @media (max-width:600px){
+    .bodygraficos{ 
+        background-image: linear-gradient(#1A4D2E,#FF9F29,#FAF3E3);
+        margin: 20px auto;
+    }
+    .logo{
+        margin: auto;
+        width: 250px;
+        height: 70px;
+    }
+    .titulograf{
+        text-align: end;
+        font-size: medium;
+    }
+    .header{
+        display: inline;
+
+    }
+   }

@@ -1,0 +1,18 @@
+ <div class="logomedia">
+          <img class="logo" src="./imagenes/logo.png" alt="inversiones" width="300px" height="80px">
+        </div>
+
+
+      <header class="header">
+        <div>
+          <ul class="menu">
+            <li class="nav"><a class="animate__animated animate__tada tom" href="index.html">HOME</a></li>
+            <li class="nav"><a href="graficos.html">GRAFICOS/MERCADOS</a></li>
+            <li class="nav"><a href= "cursos.html">CURSOS</a></li>
+            <li class="nav"><a href= "foro.html">FORO</a></li>
+            <li class="nav"><a href="contact.html">CONTACTO</a></li>
+          </ul>
+    
+        </div>
+       
+      </header>
