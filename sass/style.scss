@@ -98,6 +98,7 @@
         width: 300px;
         height: 250px;
         margin: auto;
+        margin-top: 20px;
     }
     .parrafotarj{
         margin: auto;
@@ -129,7 +130,21 @@
     
     background-image: linear-gradient(#1A4D2E,#FF9F29,#FAF3E3);
     margin: 20px auto;
+    width: 98%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"logomedia logomedia logomedia"
+                        "header header header"
+                        "main main main"
+                        "sectiongraf sectiongraf sectiongraf"
+                        "footer footer footer";
 }
+    
+
   .logomedia {
     display: flex;
     flex-direction: column;
@@ -222,29 +237,185 @@
             }
         }
     }
-   .footer{
-    margin-top: 100px;
-   }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+       }
    .alineartexto{
     text-align: center;
    }
 
-   @media (max-width:600px){
+   @media (max-width:400px){
+    
     .bodygraficos{ 
-        background-image: linear-gradient(#1A4D2E,#FF9F29,#FAF3E3);
-        margin: 20px auto;
+        background-image: linear-gradient(#df4f4f,#FF9F29,#FAF3E3,#FF9F29);
+        
+        padding: 0;
+        box-sizing: border-box;
+
+        
+        .logo{
+            margin-left: 30px;
+            width: 250px;
+            height: 70px;
+
+        }
+       
+        .titulograf{
+            text-align: start;
+            font-size: 1.55rem;
+        }
+        .parrafograficos{
+            font-size: 1rem;
+            font-family: Helvetica, sans-serif;
+            -moz-column-count: 1;
+            -moz-column-gap: 10px;
+            -webkit-column-count: 1;
+            -webkit-column-gap: 10px;
+            column-count: 1;
+            column-gap: 10px;
+        }
+        .imagen1graficos{
+            margin: auto;
+            width: 300px;
+            height: 200px;
+        }
+        .sectiongraf{
+           margin: auto;
+          
+        }
+        .card-group{
+            display: flex;
+            flex-direction: row;
+            margin-top: 600px;
+        }
+        .cardgraf{
+            width: 300px;
+        }
+       .footer{
+        margin-top: 650px;
+       }
+      
     }
-    .logo{
-        margin: auto;
-        width: 250px;
-        height: 70px;
+    
+   
+   }
+
+   //COMIENZA PAGINA CURSOS *//
+.bodycursos{
+    background-image: linear-gradient(#d62d2d ,#d62d2d,white,white, white,#636161,black)
+}
+.contenedorcursos{
+    .headercursos{
+        background-color: #d62d2d;
+        grid-area: header;
+         & ul{
+            display: flex;
+            justify-content: space-around;
+            font-size: x-large;
+            font-family: serif;
+            list-style: none;
+            margin: 10px;
+            
+                     
+        & .nav {
+            transition-duration: 4s;
+            }
+        & .nav:hover {
+            background-color: #9b1818;
+            transition-duration: 3s;
+            }
+            & a {
+                color: #100da3;
+            }
+            }
+        }
+        
     }
-    .titulograf{
-        text-align: end;
-        font-size: medium;
+  
+    .pgraf{
+        font-size: 2rem;
+        font-family: cursive;
+        text-align: start;
     }
-    .header{
-        display: inline;
+
+    .imagecursos{
+        text-align: center;
+        
+    }
+    .titulo-sec{
+        font-size: 2rem;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .parrafocursos{
+        margin-top: 30px;
+        -moz-column-count: 3;
+            -moz-column-gap: 10px;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 10px;
+            column-count: 3;
+            column-gap: 20px;
+            color: #3F4E4F;
+    }
+
+    .titulo-terc{
+        color:#3F4E4F;
 
     }
-   }
+    .titulo-interior{
+        color: #508cdb;
+    }
+    .titulo-interior1{
+        color: white;
+    }
+.colortextofooter-cursos{
+    color: white;
+    margin-left: 60px;
+}
+
+@media (max-width:400px){
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        & .nav{
+            color: #ffffff;
+            font-size: 1rem;
+        }
+   
+    }
+    .pgraf{
+        font-size: 1rem;
+        margin: auto;
+        color: #7edfb2;
+    }
+    .imagecursos-media{
+        width: 280px;
+        height: 180px;
+        margin: auto;
+    }
+    .titulo-sec{
+        color: white;
+        font-size: 1.5rem;
+    }
+    .parrafocursos{
+           margin: auto;
+           -moz-column-count: 1;
+           -moz-column-gap: 10px;
+            -webkit-column-count: 1;
+            -webkit-column-gap: 10px;
+            column-count: 1;
+            column-gap: 10px;
+            color: #000000;
+    }
+    .titulo-interior{
+        color: #000000;
+    }
+
+    .titulo-interior1{
+        color: #000;
+    }
+}
+

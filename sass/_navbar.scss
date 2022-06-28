@@ -9,8 +9,11 @@ nav{
         height: 90px;
 
     }
+    .imagentop{
+        background-image:linear-gradient(#7e7979,#e0e011);
+    }
    
-    .container-fluid{
+        .container-fluid{
        
         @include mixinsfunc.crear-flexbox(space-around);
     }
